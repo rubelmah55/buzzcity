@@ -68,6 +68,11 @@ Version: 0.1
 	}
 }
 
+@media (max-width: 1000px){
+	.container-wrap{
+		margin-top: -156px !important;
+	}
+}
 @media (max-width: 991px) {
 
 	.product-item-col-4 {
@@ -98,9 +103,7 @@ Version: 0.1
 	    text-align: left;
 	    margin-top: 15px;
 	}
-	.container-wrap{
-		margin-top: -156px !important;
-	}
+	
 }
 .product-image {
 	width: 100%;
