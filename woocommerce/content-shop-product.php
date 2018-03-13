@@ -77,7 +77,6 @@ $classes[] = $product_style;
 			<?php endif; ?>
 		</div>
 		<div class="product-item-col-6 product-description">
-			<h2><?php the_title(); ?></h2>
 			<?php
 
 				$Bproduct = getBookableProduct($product->id); 

@@ -68,6 +68,7 @@ $classes[] = $product_style;
 	<?php //do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
 
+
 	<div class="product-item-wrapper">
 		<div class="product-item-col-4 product-image">
 			<?php if(has_post_thumbnail()) : ?>
@@ -78,13 +79,27 @@ $classes[] = $product_style;
 		</div>
 		<div class="product-item-col-6 product-description">
 			<h2><?php the_title(); ?></h2>
-			<h3><span></span></h3>
+			<?php
+
+				$Bproduct = getBookableProduct($product->id); 
+				$WCproduct = wc_get_product($product->id);
+				$min_duration = get_post_meta($product->id, '_wc_booking_min_duration');
+				$max_duration = get_post_meta($product->id, '_wc_booking_max_duration');
+
+
+				
+				
+
+			 ?>
+			<h4><?php echo 'Hours: ' . $min_duration[0] . ' - ' . $max_duration[0];
+				echo '<span>' . 'Price: $' . $Bproduct->get_base_cost() . '</span>'; ?></h4>
+			<?php echo city_limit_text($WCproduct->short_description, 200); ?>
+
 		</div>
 		<div class="product-item-col-2 product-button">
 			<a href="<?php the_permalink(); ?>" class="btn book-button">Book Online</a>
 		</div>
 	</div>
-	
 
 	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 
