@@ -98,6 +98,9 @@ Version: 0.1
 	    text-align: left;
 	    margin-top: 15px;
 	}
+	.container-wrap{
+		margin-top: -156px !important;
+	}
 }
 .product-image {
 	width: 100%;
@@ -196,4 +199,7 @@ body .gform_wrapper ul li.gfield {
 video.ms-slide-bgvideo {
     position: absolute;
     left: 0;
+}
+.container-wrap{
+	margin-top: -112px !important;
 }
