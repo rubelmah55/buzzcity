@@ -70,7 +70,7 @@ Version: 0.1
 
 @media (max-width: 1000px){
 	.container-wrap{
-		margin-top: -156px !important;
+		margin-top: -156px;
 	}
 }
 @media (max-width: 991px) {
@@ -204,5 +204,5 @@ video.ms-slide-bgvideo {
     left: 0;
 }
 .container-wrap{
-	margin-top: -112px !important;
+	margin-top: -112px;
 }
