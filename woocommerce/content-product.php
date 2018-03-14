@@ -92,7 +92,7 @@ $classes[] = $product_style;
 
 			 ?>
 			<h4><?php echo 'Hours: ' . $min_duration[0] . ' - ' . $max_duration[0];
-				echo '<span>' . 'Price: $' . $Bproduct->get_base_cost() . '</span>'; ?></h4>
+				echo '<span>' . 'Price: $' . $Bproduct->get_cost() . '</span>'; ?></h4>
 			<?php echo city_limit_text($WCproduct->short_description, 200); ?>
 
 		</div>
